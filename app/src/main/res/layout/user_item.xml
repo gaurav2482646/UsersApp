@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:layout_margin="8dp"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/corner_radius_default"
+    app:cardElevation="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding_default">
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@id/status_offline"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium"
+            tools:text="Sarvagya Singh" />
+
+        <TextView
+            android:id="@+id/user_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_name"
+            android:layout_alignStart="@id/user_name"
+            android:layout_alignEnd="@id/user_name"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="@dimen/text_size_custom2"
+            tools:text="Male, 22 Years" />
+
+        <TextView
+            android:id="@+id/user_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_gender"
+            android:layout_alignStart="@id/user_gender"
+            android:layout_alignEnd="@id/user_name"
+            android:textSize="@dimen/text_size_custom2"
+            android:fontFamily="sans-serif-medium"
+            tools:text="9999999999" />
+
+        <TextView
+            android:id="@+id/status_online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:drawablePadding="8dp"
+            android:text="Active"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:drawableEndCompat="@drawable/status_online" />
+ <TextView
+            android:id="@+id/status_offline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:drawablePadding="8dp"
+            android:text="Inactive"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:drawableEndCompat="@drawable/status_offline" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
