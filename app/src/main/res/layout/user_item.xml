@@ -26,7 +26,7 @@
             android:fontFamily="sans-serif-medium"
             android:textColor="@color/black"
             android:textSize="@dimen/text_size_medium"
-            tools:text="Sarvagya Singh" />
+            tools:text="Name of User" />
 
         <TextView
             android:id="@+id/user_gender"
@@ -37,7 +37,7 @@
             android:layout_alignEnd="@id/user_name"
             android:fontFamily="sans-serif-medium"
             android:textSize="@dimen/text_size_custom2"
-            tools:text="Male, 22 Years" />
+            tools:text="Male" />
 
         <TextView
             android:id="@+id/user_email"
@@ -48,7 +48,7 @@
             android:layout_alignEnd="@id/user_name"
             android:textSize="@dimen/text_size_custom2"
             android:fontFamily="sans-serif-medium"
-            tools:text="9999999999" />
+            tools:text="gaurav@gmail.com" />
 
         <TextView
             android:id="@+id/status_online"
@@ -56,7 +56,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:drawablePadding="8dp"
-            android:text="Active"
+            android:text="@string/active"
             android:textSize="16sp"
             android:visibility="visible"
             app:drawableEndCompat="@drawable/status_online" />
@@ -66,7 +66,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:drawablePadding="8dp"
-            android:text="Inactive"
+            android:text="@string/inactive"
             android:textSize="16sp"
             android:visibility="gone"
             app:drawableEndCompat="@drawable/status_offline" />

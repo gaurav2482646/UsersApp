@@ -27,7 +27,7 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.UserVi
 
     }
 
-   public  void setData(List<UserResponse.User> data) {
+    public void setData(List<UserResponse.User> data) {
         this.userList = data;
         notifyDataSetChanged();
     }
